@@ -9,21 +9,27 @@ import lombok.Setter;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
+@Setter
 @Table(name = "usuario")
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // o banco de dados vai auto-incrementar
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, unique = true, length = 100)
     private String nome;
 
-    @Column(unique = true, length = 100)
+    @Column(nullable = false, unique = true, length = 50)
     private String email;
 
     @Column(nullable = false, unique = true)
     private String senha;
+
+    public Usuario(String nome, String email, String senha){
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+    }
 }
