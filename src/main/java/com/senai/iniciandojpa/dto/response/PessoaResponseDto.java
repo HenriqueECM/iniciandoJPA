@@ -5,6 +5,6 @@ import java.util.List;
 public record PessoaResponseDto (
         Long id,
         String nome,
-        DocumentoResponseDto documentoResponse
+        DocumentoResponseDto documento
 ) {
 }

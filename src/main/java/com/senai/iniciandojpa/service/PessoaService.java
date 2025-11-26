@@ -22,11 +22,15 @@ public class PessoaService {
     private final DocumentoRepository documentoRepository;
 
     public PessoaResponseDto criar (PessoaRequestDto request) {
+        if (documentoRepository.existsByNumero(request.documento().numero())){
+            throw new RuntimeException("Documento ja existe.");
+        }
+
         if(repository.existsByNome(request.nome())){
             throw new PessoaJaExisteException();
         }
 
-        Documento documento = documentoRepository.save(documentoMapper.paraEntidade(request.documentoRequest()));
+        Documento documento = documentoRepository.save(documentoMapper.paraEntidade(request.documento()));
         Pessoa pessoa = mapper.paraEntidade(request);
 
         pessoa.setDocumento(documento);

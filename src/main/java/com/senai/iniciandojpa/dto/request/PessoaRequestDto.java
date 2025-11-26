@@ -8,6 +8,6 @@ public record PessoaRequestDto(
         @NotBlank(message = "O nome deve ser informado.")
         String nome,
 
-        DocumentoRequestDto documentoRequest
+        DocumentoRequestDto documento
 ) {
 }
