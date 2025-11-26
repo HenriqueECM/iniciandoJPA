@@ -29,9 +29,7 @@ public class UsuarioService {
 
     public Usuario buscarPorId(Long id) {
         return repositorio.findById(id)
-                .orElseThrow(() ->{
-                    throw new UsuarioNaoExisteException();
-                });
+                .orElseThrow(UsuarioNaoExisteException::new);
     }
 
     public Usuario update(Long id, Usuario usuario){
