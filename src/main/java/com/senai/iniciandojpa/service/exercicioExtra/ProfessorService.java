@@ -47,8 +47,6 @@ public class ProfessorService {
 
         professor.getUnidadeCurriculares().add(unidadeCurricular);
 
-        unidadeCurricular.getProfessores().add(professor);
-
         return mapper.paraResposta(repository.save(professor));
     }
 }
