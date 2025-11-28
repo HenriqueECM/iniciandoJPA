@@ -5,4 +5,3 @@ public record ProfessorRequestDto (
         String email
 ){
 }
-
