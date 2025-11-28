@@ -2,7 +2,7 @@ package com.senai.iniciandojpa.dto.mapper;
 
 import com.senai.iniciandojpa.dto.request.EnderecoRequestDto;
 import com.senai.iniciandojpa.dto.response.EnderecoResponseDto;
-import com.senai.iniciandojpa.model.Endereco;
+import com.senai.iniciandojpa.model.exercicio2.Endereco;
 import org.springframework.stereotype.Component;
 
 @Component

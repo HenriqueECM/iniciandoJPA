@@ -1,8 +1,8 @@
-package com.senai.iniciandojpa.controller;
+package com.senai.iniciandojpa.controller.exercicio1;
 
 import com.senai.iniciandojpa.dto.request.PessoaRequestDto;
 import com.senai.iniciandojpa.dto.response.PessoaResponseDto;
-import com.senai.iniciandojpa.service.PessoaService;
+import com.senai.iniciandojpa.service.exercicio1.PessoaService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

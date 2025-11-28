@@ -1,13 +1,12 @@
-package com.senai.iniciandojpa.service;
+package com.senai.iniciandojpa.service.exercicio2;
 
 import com.senai.iniciandojpa.dto.mapper.EnderecoMapper;
 import com.senai.iniciandojpa.dto.mapper.FuncionarioMapper;
 import com.senai.iniciandojpa.dto.request.FuncionarioRequestDto;
-import com.senai.iniciandojpa.dto.response.EnderecoResponseDto;
 import com.senai.iniciandojpa.dto.response.FuncionarioResponseDto;
 import com.senai.iniciandojpa.exception.FuncionarioNaoExisteException;
-import com.senai.iniciandojpa.model.Endereco;
-import com.senai.iniciandojpa.model.Funcionario;
+import com.senai.iniciandojpa.model.exercicio2.Endereco;
+import com.senai.iniciandojpa.model.exercicio2.Funcionario;
 import com.senai.iniciandojpa.repository.EnderecoRepository;
 import com.senai.iniciandojpa.repository.FuncionarioRepository;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package com.senai.iniciandojpa.service;
+package com.senai.iniciandojpa.service.exercicio1;
 
 import com.senai.iniciandojpa.dto.mapper.DocumentoMapper;
 import com.senai.iniciandojpa.dto.mapper.PessoaMapper;
@@ -6,8 +6,8 @@ import com.senai.iniciandojpa.dto.request.PessoaRequestDto;
 import com.senai.iniciandojpa.dto.response.PessoaResponseDto;
 import com.senai.iniciandojpa.exception.PessoaJaExisteException;
 import com.senai.iniciandojpa.exception.PessoaNaoExisteException;
-import com.senai.iniciandojpa.model.Documento;
-import com.senai.iniciandojpa.model.Pessoa;
+import com.senai.iniciandojpa.model.exercicio1.Documento;
+import com.senai.iniciandojpa.model.exercicio1.Pessoa;
 import com.senai.iniciandojpa.repository.DocumentoRepository;
 import com.senai.iniciandojpa.repository.PessoaRepository;
 import lombok.AllArgsConstructor;

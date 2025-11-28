@@ -3,7 +3,7 @@ package com.senai.iniciandojpa.dto.mapper;
 import com.senai.iniciandojpa.dto.request.FuncionarioRequestDto;
 import com.senai.iniciandojpa.dto.response.EnderecoResponseDto;
 import com.senai.iniciandojpa.dto.response.FuncionarioResponseDto;
-import com.senai.iniciandojpa.model.Funcionario;
+import com.senai.iniciandojpa.model.exercicio2.Funcionario;
 import org.springframework.stereotype.Component;
 
 @Component

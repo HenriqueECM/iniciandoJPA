@@ -1,8 +1,8 @@
-package com.senai.iniciandojpa.controller;
+package com.senai.iniciandojpa.controller.exercicio2;
 
 import com.senai.iniciandojpa.dto.request.FuncionarioRequestDto;
 import com.senai.iniciandojpa.dto.response.FuncionarioResponseDto;
-import com.senai.iniciandojpa.service.FuncionarioService;
+import com.senai.iniciandojpa.service.exercicio2.FuncionarioService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,10 +1,12 @@
-package com.senai.iniciandojpa.model;
+package com.senai.iniciandojpa.model.exercicio3;
 
+import com.senai.iniciandojpa.model.exercicio3.Curso;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,7 +19,7 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String nome;
 
     @ManyToMany
@@ -26,5 +28,5 @@ public class Aluno {
             joinColumns = @JoinColumn(name = "aluno_id"),
             inverseJoinColumns = @JoinColumn(name = "curso_id")
     )
-    private List<Curso> cursos;
+    private List<Curso> cursos = new ArrayList<>();
 }

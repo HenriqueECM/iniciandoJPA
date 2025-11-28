@@ -3,10 +3,7 @@ package com.senai.iniciandojpa.dto.mapper;
 import com.senai.iniciandojpa.dto.request.PessoaRequestDto;
 import com.senai.iniciandojpa.dto.response.DocumentoResponseDto;
 import com.senai.iniciandojpa.dto.response.PessoaResponseDto;
-import com.senai.iniciandojpa.model.Documento;
-import com.senai.iniciandojpa.model.Pessoa;
-import com.senai.iniciandojpa.repository.DocumentoRepository;
-import lombok.AllArgsConstructor;
+import com.senai.iniciandojpa.model.exercicio1.Pessoa;
 import org.springframework.stereotype.Component;
 
 @Component

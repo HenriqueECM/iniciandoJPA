@@ -1,18 +1,17 @@
-package com.senai.iniciandojpa.model;
+package com.senai.iniciandojpa.model.exercicio1;
 
+import com.senai.iniciandojpa.model.exercicio1.Documento;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "curso")
-public class Curso {
+@Table(name = "pessoa")
+public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,6 +19,6 @@ public class Curso {
     @Column(nullable = false, unique = true)
     private String nome;
 
-    @ManyToMany (mappedBy = "cursos")
-    private List<Aluno> alunos;
+    @OneToOne (cascade = CascadeType.ALL)
+    private Documento documento;
 }

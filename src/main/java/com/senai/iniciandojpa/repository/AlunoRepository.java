@@ -1,8 +1,8 @@
 package com.senai.iniciandojpa.repository;
 
-import com.senai.iniciandojpa.model.exercicio2.Funcionario;
+import com.senai.iniciandojpa.model.exercicio3.Aluno;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface FuncionarioRepository extends JpaRepository<Funcionario, Long> {
+public interface AlunoRepository extends JpaRepository<Aluno, Long> {
     boolean existsByNome(String nome);
 }

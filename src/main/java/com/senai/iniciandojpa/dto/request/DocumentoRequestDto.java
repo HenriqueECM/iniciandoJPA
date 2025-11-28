@@ -1,6 +1,6 @@
 package com.senai.iniciandojpa.dto.request;
 
-import com.senai.iniciandojpa.model.TipoDocumento;
+import com.senai.iniciandojpa.model.exercicio1.TipoDocumento;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;

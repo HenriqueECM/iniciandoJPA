@@ -1,5 +1,6 @@
-package com.senai.iniciandojpa.model;
+package com.senai.iniciandojpa.model.exercicio2;
 
+import com.senai.iniciandojpa.model.exercicio2.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

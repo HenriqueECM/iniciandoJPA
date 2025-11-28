@@ -1,4 +1,4 @@
-package com.senai.iniciandojpa.model;
+package com.senai.iniciandojpa.model.exercicio2;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

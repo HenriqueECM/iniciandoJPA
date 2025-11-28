@@ -2,10 +2,9 @@ package com.senai.iniciandojpa.dto.response;
 
 import java.util.List;
 
-public record AlunoResponseDto (
+public record CursoResponseDto(
         Long id,
         String nome,
-        List<CursoSimplesResponseDto> cursos
-){
+        List<AlunoSimplesResponseDto> alunos
+) {
 }
-

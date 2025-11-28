@@ -2,7 +2,7 @@ package com.senai.iniciandojpa.dto.mapper;
 
 import com.senai.iniciandojpa.dto.request.DocumentoRequestDto;
 import com.senai.iniciandojpa.dto.response.DocumentoResponseDto;
-import com.senai.iniciandojpa.model.Documento;
+import com.senai.iniciandojpa.model.exercicio1.Documento;
 import org.springframework.stereotype.Component;
 
 @Component
